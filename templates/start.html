@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		  <meta charset="utf-8">
+		  <title>Welcome Page</title>
+		  <link rel="stylesheet" href="style.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<style>
+* {
+	background-color:#f8f8f8;
+	text-align:center;
+	padding: 60px;
+	font-family: 'Open Sans', sans-serif;
+	color:#757575;
+	font-size:72px;
+}
+
+</style>
+		</head>
+		<body>
+			<h1>Wgraj plik</h1>
+			<form action="/upload" enctype="multipart/form-data" method="post">
+			    <label>Tytuł pliku</label>
+			    <input type="text" name="title">
+			    <br>
+			    <label>Plik</label>
+			    <input type="file" name="upload" multiple="multiple"><br>
+			    <input type="submit" value="Wyślij">
+			</form>
+		</body>
+</html>
