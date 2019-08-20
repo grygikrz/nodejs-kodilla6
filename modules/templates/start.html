@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		  <meta charset="utf-8">
+		  <title>Upload your images</title>
+		  <link rel="stylesheet" href="style.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		</head>
+		<body>
+			<h1>Your Gallery</h1>
+			<div id="imGallery"></div>
+			<h1>Upload files</h1>
+			<div id="drop">
+				<form class="my-form" method="POST" action="/upload" onsubmit="return uploadFile(this);">
+					<div id="gallery"></div>
+			    <p>Drag and drop some images</p>
+			    <input type="file" id="fileElem" multiple accept="image/*">
+			    <label class="button" for="fileElem">Select some files</label>
+			  </form>
+			</div>
+			<script type="text/javascript" src="script.js"></script>
+		</body>
+</html>
